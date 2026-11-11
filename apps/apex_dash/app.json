@@ -1,7 +1,7 @@
 {
   "id": "apex_dash",
-  "title": "Apex Dash",
-  "description": "Instrument cluster dashes with race-car looks: GT3, Apex, Apex Red, Circuit, Sprint, M and Sport. Shift lights, rev bar, boost, temps and shift scoring, clear of the places BMW paints over the cluster.",
+  "title": "E39 M5 Cluster (Marko DEV)",
+  "description": "Authentic BMW E39 M5 digital cluster for iDrive 7 and 8 (MGU) by Marko DEV. Features 5-needle startup sweep self-test, Check Control OBC display, dynamic LED warm-up arch, 7/8-speed Steptronic/DKG selector, and Service-Interval indicator.",
   "version": "1.2.0",
   "vendor": "custom",
   "loggingId": "OAD1",
@@ -94,41 +94,17 @@
   "settings": [
     {
       "key": "hudLayout",
-      "label": "Theme (when not by drive mode)",
+      "label": "Theme",
       "type": "choice",
-      "default": "gt3",
+      "default": "e39_m5_v2",
       "options": [
         [
-          "off",
-          "Off (BMW's own cluster)"
+          "e39_m5_v2",
+          "E39 M5 Cluster (Marko DEV)"
         ],
         [
-          "gt3",
-          "GT3"
-        ],
-        [
-          "apex",
-          "Apex"
-        ],
-        [
-          "apex_red",
-          "Apex Red"
-        ],
-        [
-          "circuit",
-          "Circuit"
-        ],
-        [
-          "sprint",
-          "Sprint"
-        ],
-        [
-          "m",
-          "M"
-        ],
-        [
-          "sport",
-          "Sport"
+          "e39_m5_v2_night",
+          "E39 M5 Night Cluster (Marko DEV)"
         ],
         [
           "e39_m5",
@@ -136,15 +112,11 @@
         ],
         [
           "e39_m5_night",
-          "E39 M5 Night"
+          "E39 M5 Classic Night"
         ],
         [
-          "e39_m5_v2",
-          "E39 M5 V2"
-        ],
-        [
-          "e39_m5_v2_night",
-          "E39 M5 V2 Night"
+          "off",
+          "Off (BMW's own cluster)"
         ],
         [
           "grid",
@@ -156,45 +128,21 @@
       "key": "byMode",
       "label": "Change with SPORT / COMFORT / ECO PRO",
       "type": "bool",
-      "default": true
+      "default": false
     },
     {
       "key": "inComfort",
       "label": "In Comfort",
       "type": "choice",
-      "default": "apex",
+      "default": "e39_m5_v2",
       "options": [
         [
-          "off",
-          "Off (BMW's own cluster)"
+          "e39_m5_v2",
+          "E39 M5 Cluster (Marko DEV)"
         ],
         [
-          "gt3",
-          "GT3"
-        ],
-        [
-          "apex",
-          "Apex"
-        ],
-        [
-          "apex_red",
-          "Apex Red"
-        ],
-        [
-          "circuit",
-          "Circuit"
-        ],
-        [
-          "sprint",
-          "Sprint"
-        ],
-        [
-          "m",
-          "M"
-        ],
-        [
-          "sport",
-          "Sport"
+          "e39_m5_v2_night",
+          "E39 M5 Night Cluster (Marko DEV)"
         ],
         [
           "e39_m5",
@@ -202,15 +150,11 @@
         ],
         [
           "e39_m5_night",
-          "E39 M5 Night"
+          "E39 M5 Classic Night"
         ],
         [
-          "e39_m5_v2",
-          "E39 M5 V2"
-        ],
-        [
-          "e39_m5_v2_night",
-          "E39 M5 V2 Night"
+          "off",
+          "Off (BMW's own cluster)"
         ]
       ]
     },
@@ -218,39 +162,15 @@
       "key": "inSport",
       "label": "In Sport",
       "type": "choice",
-      "default": "sprint",
+      "default": "e39_m5_v2_night",
       "options": [
         [
-          "off",
-          "Off (BMW's own cluster)"
+          "e39_m5_v2_night",
+          "E39 M5 Night Cluster (Marko DEV)"
         ],
         [
-          "gt3",
-          "GT3"
-        ],
-        [
-          "apex",
-          "Apex"
-        ],
-        [
-          "apex_red",
-          "Apex Red"
-        ],
-        [
-          "circuit",
-          "Circuit"
-        ],
-        [
-          "sprint",
-          "Sprint"
-        ],
-        [
-          "m",
-          "M"
-        ],
-        [
-          "sport",
-          "Sport"
+          "e39_m5_v2",
+          "E39 M5 Cluster (Marko DEV)"
         ],
         [
           "e39_m5",
@@ -258,15 +178,11 @@
         ],
         [
           "e39_m5_night",
-          "E39 M5 Night"
+          "E39 M5 Classic Night"
         ],
         [
-          "e39_m5_v2",
-          "E39 M5 V2"
-        ],
-        [
-          "e39_m5_v2_night",
-          "E39 M5 V2 Night"
+          "off",
+          "Off (BMW's own cluster)"
         ]
       ]
     },
@@ -274,39 +190,15 @@
       "key": "inEco",
       "label": "In Eco Pro",
       "type": "choice",
-      "default": "circuit",
+      "default": "e39_m5_v2",
       "options": [
         [
-          "off",
-          "Off (BMW's own cluster)"
+          "e39_m5_v2",
+          "E39 M5 Cluster (Marko DEV)"
         ],
         [
-          "gt3",
-          "GT3"
-        ],
-        [
-          "apex",
-          "Apex"
-        ],
-        [
-          "apex_red",
-          "Apex Red"
-        ],
-        [
-          "circuit",
-          "Circuit"
-        ],
-        [
-          "sprint",
-          "Sprint"
-        ],
-        [
-          "m",
-          "M"
-        ],
-        [
-          "sport",
-          "Sport"
+          "e39_m5_v2_night",
+          "E39 M5 Night Cluster (Marko DEV)"
         ],
         [
           "e39_m5",
@@ -314,15 +206,11 @@
         ],
         [
           "e39_m5_night",
-          "E39 M5 Night"
+          "E39 M5 Classic Night"
         ],
         [
-          "e39_m5_v2",
-          "E39 M5 V2"
-        ],
-        [
-          "e39_m5_v2_night",
-          "E39 M5 V2 Night"
+          "off",
+          "Off (BMW's own cluster)"
         ]
       ]
     },
