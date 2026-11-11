@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 2,
+  "name": "Circuit",
+  "theme": "circuit",
+  "_about": "Circuit: a rev ring and a speed ring at the sides (clear of BMW's black box), the gear big in the middle, oil/water/boost cells under it, nothing in the bottom-centre warning strip.",
+  "widgets": [
+    {
+      "id": "frame",
+      "type": "boxes",
+      "class": "ambient",
+      "z": -10,
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 720,
+      "color": "bg",
+      "boxes": [
+        {
+          "id": "oil_box",
+          "x": 560,
+          "y": 440,
+          "w": 250,
+          "h": 104,
+          "radius": 16
+        },
+        {
+          "id": "water_box",
+          "x": 835,
+          "y": 440,
+          "w": 250,
+          "h": 104,
+          "radius": 16
+        },
+        {
+          "id": "fuel_box",
+          "x": 1110,
+          "y": 440,
+          "w": 250,
+          "h": 104,
+          "radius": 16
+        }
+      ]
+    },
+    {
+      "id": "wm",
+      "type": "text",
+      "class": "ambient",
+      "z": -9,
+      "x": 558,
+      "y": 283,
+      "w": 804,
+      "h": 153,
+      "text": "Marko DEV",
+      "font": "wm",
+      "color": [
+        34,
+        38,
+        50,
+        255
+      ],
+      "align": "center"
+    },
+    {
+      "id": "lights",
+      "type": "lights",
+      "z": 1,
+      "x": 470,
+      "y": 34,
+      "w": 980,
+      "h": 34,
+      "count": 18,
+      "tail": 3,
+      "round": true,
+      "off": 0.12,
+      "from": 3000
+    },
+    {
+      "id": "prompt_l",
+      "type": "text",
+      "z": 5,
+      "x": 352,
+      "y": 60,
+      "w": 110,
+      "h": 37,
+      "text": "{{shiftPrompt}}",
+      "font": "unit",
+      "color": "hot",
+      "align": "right"
+    },
+    {
+      "id": "prompt_r",
+      "type": "text",
+      "z": 5,
+      "x": 1462,
+      "y": 60,
+      "w": 100,
+      "h": 37,
+      "text": "{{shiftPrompt}}",
+      "font": "unit",
+      "color": "hot"
+    },
+    {
+      "id": "mode",
+      "type": "text",
+      "z": 5,
+      "x": 140,
+      "y": 222,
+      "w": 260,
+      "h": 27,
+      "text": "{{mode}}",
+      "font": "head",
+      "color": "accent",
+      "align": "center"
+    },
+    {
+      "id": "ring_rpm",
+      "type": "arc",
+      "z": 2,
+      "x": 120,
+      "y": 262,
+      "w": 280,
+      "h": 280,
+      "signal": "rpm",
+      "min": 0,
+      "max": 7500,
+      "width": 14
+    },
+    {
+      "id": "ring_speed",
+      "type": "arc",
+      "z": 2,
+      "x": 1610,
+      "y": 262,
+      "w": 280,
+      "h": 280,
+      "signal": "speed",
+      "min": 0,
+      "max": 300,
+      "width": 14
+    },
+    {
+      "id": "gear",
+      "type": "text",
+      "z": 5,
+      "x": 760,
+      "y": 64,
+      "w": 400,
+      "h": 244,
+      "text": "{{gearnum}}",
+      "font": "gear",
+      "color": "fg",
+      "align": "center",
+      "hotWhen": "now"
+    },
+    {
+      "id": "rpm",
+      "type": "text",
+      "z": 5,
+      "x": 140,
+      "y": 356,
+      "w": 240,
+      "h": 93,
+      "text": "{{rpm10}}",
+      "font": "big",
+      "color": "fg",
+      "align": "center",
+      "hotWhen": "now"
+    },
+    {
+      "id": "rpm_cap",
+      "type": "text",
+      "z": 5,
+      "x": 140,
+      "y": 452,
+      "w": 240,
+      "h": 27,
+      "text": "RPM",
+      "font": "head",
+      "color": "dim",
+      "align": "center"
+    },
+    {
+      "id": "speed",
+      "type": "text",
+      "z": 5,
+      "x": 1630,
+      "y": 356,
+      "w": 240,
+      "h": 93,
+      "text": "{{speed}}",
+      "font": "big",
+      "color": "fg",
+      "align": "center"
+    },
+    {
+      "id": "speed_unit",
+      "type": "text",
+      "z": 5,
+      "x": 1630,
+      "y": 452,
+      "w": 240,
+      "h": 37,
+      "text": "{{u:speed}}",
+      "font": "unit",
+      "color": "dim",
+      "align": "center"
+    },
+    {
+      "id": "shift_head",
+      "type": "text",
+      "z": 5,
+      "x": 140,
+      "y": 584,
+      "w": 240,
+      "h": 27,
+      "text": "SHIFT AT",
+      "font": "head",
+      "color": "dim",
+      "align": "center"
+    },
+    {
+      "id": "shift_at",
+      "type": "text",
+      "z": 5,
+      "x": 140,
+      "y": 614,
+      "w": 240,
+      "h": 70,
+      "text": "{{shiftAt}}",
+      "font": "value",
+      "color": "accent",
+      "align": "center"
+    },
+    {
+      "id": "time_head",
+      "type": "text",
+      "z": 5,
+      "x": 1630,
+      "y": 584,
+      "w": 240,
+      "h": 27,
+      "text": "TIME",
+      "font": "head",
+      "color": "dim",
+      "align": "center"
+    },
+    {
+      "id": "time",
+      "type": "text",
+      "z": 5,
+      "x": 1630,
+      "y": 614,
+      "w": 240,
+      "h": 70,
+      "text": "{{time}}",
+      "font": "value",
+      "color": "accent",
+      "align": "center"
+    },
+    {
+      "id": "oil_head",
+      "type": "text",
+      "z": 5,
+      "x": 576,
+      "y": 452,
+      "w": 220,
+      "h": 27,
+      "text": "OIL",
+      "font": "head",
+      "color": "dim",
+      "warn": {
+        "signal": "oil",
+        "above": 125
+      }
+    },
+    {
+      "id": "oil",
+      "type": "text",
+      "z": 5,
+      "x": 570,
+      "y": 484,
+      "w": 150,
+      "h": 45,
+      "text": "{{oil}}",
+      "font": "small",
+      "color": "fg",
+      "align": "right",
+      "warn": {
+        "signal": "oil",
+        "above": 125
+      }
+    },
+    {
+      "id": "oil_unit",
+      "type": "text",
+      "z": 5,
+      "x": 728,
+      "y": 488,
+      "w": 70,
+      "h": 37,
+      "text": "{{u:temp}}",
+      "font": "unit",
+      "color": "dim",
+      "warn": {
+        "signal": "oil",
+        "above": 125
+      }
+    },
+    {
+      "id": "water_head",
+      "type": "text",
+      "z": 5,
+      "x": 851,
+      "y": 452,
+      "w": 220,
+      "h": 27,
+      "text": "WATER",
+      "font": "head",
+      "color": "dim",
+      "warn": {
+        "signal": "coolant",
+        "above": 112
+      }
+    },
+    {
+      "id": "water",
+      "type": "text",
+      "z": 5,
+      "x": 845,
+      "y": 484,
+      "w": 150,
+      "h": 45,
+      "text": "{{coolant}}",
+      "font": "small",
+      "color": "fg",
+      "align": "right",
+      "warn": {
+        "signal": "coolant",
+        "above": 112
+      }
+    },
+    {
+      "id": "water_unit",
+      "type": "text",
+      "z": 5,
+      "x": 1003,
+      "y": 488,
+      "w": 70,
+      "h": 37,
+      "text": "{{u:temp}}",
+      "font": "unit",
+      "color": "dim",
+      "warn": {
+        "signal": "coolant",
+        "above": 112
+      }
+    },
+    {
+      "id": "fuel_head",
+      "type": "text",
+      "z": 5,
+      "x": 1126,
+      "y": 452,
+      "w": 220,
+      "h": 27,
+      "text": "FUEL",
+      "font": "head",
+      "color": "dim",
+      "warn": {
+        "signal": "fuel",
+        "below": 0.15
+      }
+    },
+    {
+      "id": "fuel",
+      "type": "text",
+      "z": 5,
+      "x": 1120,
+      "y": 484,
+      "w": 150,
+      "h": 45,
+      "text": "{{fuelPct}}",
+      "font": "small",
+      "color": "fg",
+      "align": "right",
+      "warn": {
+        "signal": "fuel",
+        "below": 0.15
+      }
+    },
+    {
+      "id": "fuel_unit",
+      "type": "text",
+      "z": 5,
+      "x": 1278,
+      "y": 488,
+      "w": 70,
+      "h": 37,
+      "text": "%",
+      "font": "unit",
+      "color": "dim",
+      "warn": {
+        "signal": "fuel",
+        "below": 0.15
+      }
+    },
+    {
+      "id": "last_head",
+      "type": "text",
+      "z": 5,
+      "x": 690,
+      "y": 556,
+      "w": 250,
+      "h": 27,
+      "text": "LAST SHIFT  {{lastGears}}",
+      "font": "head",
+      "color": "dim"
+    },
+    {
+      "id": "last_rpm",
+      "type": "text",
+      "z": 5,
+      "x": 950,
+      "y": 548,
+      "w": 110,
+      "h": 45,
+      "text": "{{lastShift}}",
+      "font": "small",
+      "color": "fg"
+    },
+    {
+      "id": "last_verdict",
+      "type": "text",
+      "z": 5,
+      "x": 1068,
+      "y": 552,
+      "w": 170,
+      "h": 37,
+      "text": "{{verdict}}",
+      "font": "unit",
+      "colorBy": "verdict"
+    }
+  ]
+}
