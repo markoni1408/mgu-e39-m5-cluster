@@ -22,6 +22,14 @@
 
 ---
 
+## 🎬 Live Animation (Nadeltest & Alle Funktionen)
+
+<p align="center">
+  <img src="docs/images/e39-cluster-animation.gif" width="920" alt="E39 M5 Cluster Startup Needle Sweep, OBC Check Control, MARKO DEV and 8-Speed Live Telemetry">
+  <br>
+  <em><b>Live Showcase:</b> 5-Nadel-Sweep, Lampentest, OBC Check Control, /// M-POWER, MARKO DEV Signatur & 8-Gang DKG Live-Telemetrie</em>
+</p>
+
 ## 📸 Screenshots & Animation Phases / Animations-Phasen
 
 <p align="center">

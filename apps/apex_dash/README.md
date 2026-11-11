@@ -2,6 +2,10 @@
 
 Custom instrument cluster layout recreating the classic BMW E39 M5 gauge cluster for BMW iDrive 7 and 8 head units (MGU / MGU22) through `cluster-render`.
 
+<p align="center">
+  <img src="../../docs/images/e39-cluster-animation.gif" width="900" alt="E39 M5 Cluster Live Animation">
+</p>
+
 ## Dashes
 
 | Dash | Look |
